@@ -4,5 +4,5 @@ env.py
 .ipynb_checkpoints/ 
 __pycache__ 
 titanic_df.csv 
-titanic.csv
 iris.csv
+
