@@ -17,7 +17,7 @@ def get_connection(db, user=user, host=host, password=password):
     return f'mysql+pymysql://{user}:{password}@{host}/{db}'
 
 
-#######################################NEW TITANIC DATA HELPER FUNCTION#######################################################
+#######################################NEW TITANIC DATA FUNCTION#######################################################
 
  #helper function to get titanic_db
 
@@ -30,7 +30,7 @@ def new_titanic_data():
     return pd.read_sql(sql_query, get_connection('titanic_db')) 
 
 
-##################################GET TITANIC DATA HELPER FUNCTION#############################################
+##################################GET TITANIC DATA FUNCTION#############################################
 
 def get_titanic_data(cached=False):
     '''
@@ -54,7 +54,7 @@ def get_titanic_data(cached=False):
     return df  
 
 
-#######################################NEW IRIS DATA HELPER FUNCTION#######################################################
+#######################################NEW IRIS DATA FUNCTION#######################################################
 
 def new_iris_data():
     '''
@@ -66,7 +66,7 @@ def new_iris_data():
     return pd.read_sql(sql_query, get_connection('iris_db')) 
 
 
-#######################################GET IRIS DATA HELPER FUNCTION#######################################################
+#######################################GET IRIS DATA FUNCTION#######################################################
 
 
 def get_iris_data(cached=False):
