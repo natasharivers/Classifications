@@ -55,10 +55,11 @@ def get_titanic_data(cached=False):
 #######################################NEW IRIS DATA HELPER FUNCTION#######################################################
 def new_iris_data():
     '''
-    This function reads in the titanic data from the Codeup db
-    and returns a pandas DataFrame with all columns.
+    This function reads in the iris data from the Codeup db
+    and returns a pandas DataFrame with all columns from 
+    measurements and species tables.
     '''
-    sql_query = 'SELECT * FROM measurements'
+    sql_query = 'SELECT * FROM measurements JOIN species ON measurements.species_id= species.species_id'
     return pd.read_sql(sql_query, get_connection('iris_db')) 
 
 
