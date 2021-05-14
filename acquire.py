@@ -89,18 +89,3 @@ def get_iris_data(cached=False):
         df = pd.read_csv('iris_df.csv', index_col=0)
         
     return df  
-
-############### CLEANED TITANIC DATA ###############################
-
-    def clean_titanic_data(df):
-    '''
-    takes in a dataframe of the titanic dataset as it is acquired and returns a cleaned dataframe
-    arguments: df: a pandas DataFrame with the expected feature names and columns
-    return: clean_df: a DataFrame with the cealning operations performed on it
-    '''
-    df = df.drop_duplicates()
-    df = df.drop(columns=['deck', 'embarked', 'class', 'age'])
-    df['embark_town']= df.embark_town.fillna(value='Southampton')
-    dummy_df = pd.get_dummies(df[['sex', 'embark_town']], drop_first=True, True)
-    df = pd.concat([df, dummy_df], axis=1)
-    return df.drop(columns=['sex', 'embark_town'])
