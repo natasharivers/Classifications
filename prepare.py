@@ -1,6 +1,6 @@
 def prep_iris(df):
     '''
-    accepts the untrasformed iris data
+    accepts the untransformed iris data
     returns: the data with cleaning operations performed on it 
     '''
     df = df.drop(columns= (['species_id', 'measurement_id']))
