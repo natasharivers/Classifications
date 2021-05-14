@@ -30,7 +30,7 @@ def new_titanic_data():
     return pd.read_sql(sql_query, get_connection('titanic_db')) 
 
 
-##################################GET TITANIC DATA FUNCTION#############################################
+##################################GET TITANIC DATA MOTHER FUNCTION#############################################
 
 def get_titanic_data(cached=False):
     '''
@@ -66,7 +66,7 @@ def new_iris_data():
     return pd.read_sql(sql_query, get_connection('iris_db')) 
 
 
-#######################################GET IRIS DATA FUNCTION#######################################################
+#######################################GET IRIS DATA MOTHER FUNCTION#######################################################
 
 
 def get_iris_data(cached=False):
