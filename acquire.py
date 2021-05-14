@@ -8,6 +8,7 @@ from pydataset import data
 
 
 #helper function to get connection
+
 def get_connection(db, user=user, host=host, password=password):
     '''
     This function uses my info from my env file to
@@ -19,6 +20,7 @@ def get_connection(db, user=user, host=host, password=password):
 #######################################NEW TITANIC DATA HELPER FUNCTION#######################################################
 
  #helper function to get titanic_db
+
 def new_titanic_data():
     '''
     This function reads in the titanic data from the Codeup db
@@ -53,6 +55,7 @@ def get_titanic_data(cached=False):
 
 
 #######################################NEW IRIS DATA HELPER FUNCTION#######################################################
+
 def new_iris_data():
     '''
     This function reads in the iris data from the Codeup db
