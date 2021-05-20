@@ -13,6 +13,16 @@ def prep_iris(df):
     cleaned_df = pd.get_dummies(data=cleaned_df, columns= ['species'], drop_first = True)
     return cleaned_df
 
+
+def impute_mode(df):
+    '''
+    impute mode for embark_town. Replaces missing values with most frequently occurring value.
+    '''
+    imputer = SimpleImputer(strategy='most_frequent', missing_values=None)
+    df[['embark_town']] = imputer.fit_transform(df[['embark_town']])
+    return df
+
+
 def prep_titanic(df):
     '''
     takes in a dataframe of the titanic dataset as it is acquired and returns a cleaned dataframe
