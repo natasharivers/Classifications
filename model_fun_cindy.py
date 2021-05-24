@@ -1,3 +1,16 @@
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier, plot_tree, export_text
+from io import StringIO
+import numpy as np
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.dummy import DummyClassifier
+from sklearn.metrics import classification_report
+import matplotlib.pyplot as plt
+from IPython.display import display
+
 def model_performs (X_df, y_df, model):
     '''
     Take in a X_df, y_df and model  and fit the model , make a prediction, calculate score (accuracy), 
