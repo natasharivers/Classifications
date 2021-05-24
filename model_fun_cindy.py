@@ -51,14 +51,12 @@ def model_performs (X_df, y_df, model):
     print('''
     The positive is  'survived'
     Confusion Matrix
-    ''',
-    cf
-    )
+    ''')
+    display(cf)
     print('''
     ________________________________________________________________________________
     
     Classification Report:
-    
-    ''',
-    clas_rep)
+    ''')
+    display(clas_rep)
    
