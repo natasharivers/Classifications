@@ -4,6 +4,14 @@
 
 Some exercises include:
   - Data Acquisition
-  - Data Preperation (coming soon)
-  - Exploratory Analysis (coming soon)
-  - Modeling (coming soon)
+  - Data Preperation 
+  - Data Tidying
+  - Exploratory Analysis
+  - Classification Model Evaluation 
+  - Modeling:
+    - Decision Tree Models
+    - Random Forest Models
+    - K-Nearest-Neighbor Models
+    - Logistic Regression Models
+  - User-Defined Functions
+
